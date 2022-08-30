@@ -1,0 +1,72 @@
+/* 메인 컨텐츠 */
+
+.content > div {
+    margin-bottom: 100px;
+}
+
+/* 메인 슬라이드 */
+.main-slide {
+    width: 1160px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.main-slide > ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.main-slide > ul > li > a {
+    display: block;
+    width: 1160px;
+    line-height: 1;
+}
+
+.main-slide > ul > li > a > img {
+    max-width: 100%;
+}
+
+.main-slide > .arrow {
+    height: 410px;
+    line-height: 410px;
+    position: absolute;
+    top: 0;
+    opacity: 0.4;
+}
+
+.main-slide > .prev {
+    left: 0;
+}
+
+.main-slide > .next {
+    right: 0;
+}
+
+.main-slide > .arrow > i {
+    font-size: 30px;
+}
+
+.main-slide > .arrow:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+/* 메인 박스들 */
+.main-boxs {
+    width: 1160px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.main-boxs > .title {
+    margin-bottom: 20px;
+}
+
+.main-map > img { 
+    max-width: 100%;
+}

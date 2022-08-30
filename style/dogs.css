@@ -1,0 +1,146 @@
+.simply-scroll .simply-scroll-list li{
+    width: 250px;
+    height: 250px;
+    margin: 5px;
+}
+.simply-scroll .simply-scroll-list li img{
+    width: 100%;
+    height: 100%;
+}
+.simply-scroll {
+    width: 100%;
+}
+.simply-scroll .simply-scroll-clip{
+    width: 100%;
+}
+.adoptHead{
+    text-align: center;
+    margin: 40px auto;
+    font-size: 35px;
+    font-weight: 1000;
+}
+.dogtype{
+    height: 80px;
+}
+.dogtype>ul{
+    list-style-type: none;
+    border-top: 1px solid black;
+    border-bottom: 1px solid #ccc;
+    float: left;
+    padding: 0;
+}
+.dogtype>ul>li{
+    margin: 0;
+    padding: 0;
+    float: left;
+    text-align: center;
+    width: 100px;
+    line-height: 50px;
+    height: 50px;
+}
+.dogtype>ul>li>a{
+    text-decoration: none;
+    color: rgb(30, 29, 29);
+    width: 100%;
+}
+.dogPicture{
+    margin: 0 auto;
+    overflow: hidden;
+    /* position: relative; */
+}
+.dogPicture>div{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 900;
+    margin: 30px auto;
+}
+.dogPicture>ul{
+    list-style-type: none;
+    width: 2600px;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+.dogPicture>ul>li{
+    float: left;
+}
+.dogPicture>ul>li>img{
+    height: 250px;
+    width: 250px;
+    margin: 5px;
+}
+.dogPicture div:last-child>img{
+    width: 1500px;
+}
+.dogsMain{
+    margin: 150px auto;
+    padding-left: 100px;
+    padding-right: 100px;
+    height: 1000px;
+}
+.menu{
+    width: 300px;
+    height: 400px;
+    float: left;
+    margin: 12px;
+    margin-top: 30px;
+}
+.menu img{
+    width: 300px;
+    height: 300px;
+    border-radius: 15px;
+}
+.menu img:hover{
+    box-shadow: 5px 5px 10px dimgrey;
+}
+.menu span{
+    color: rgb(40, 40, 40);
+}
+.heart{
+    height: 30px;
+    width: 70px;
+    line-height: 30px;
+    font-size: 17px;
+    left: 15px;
+    float: left;
+    cursor: pointer;
+}
+.heart>span:first-child{
+    color: dimgrey;
+}
+.heart>span:first-child:hover{
+    color: #e5a2a8;
+}
+.heart>span{
+    line-height: 30px;
+    float: left;
+}
+#type{
+    color: #e5a2a8;
+    font-weight: 500;
+}
+h2.dogsMainTitle{
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+}
+.more button{
+    margin-bottom: 100px;
+    width: 150px;
+    height: 50px;
+    background-color: white;
+    border: 1px solid #e5a2a8;
+    border-radius: 10px;
+    font-size: 20px;
+    color: #e5a2a8;
+    cursor: pointer;
+}
+.more button:hover{
+    background-color: #e5a2a8;
+    color: white;
+}
+.vis{
+    display: block;
+}
+.unvis{
+    display: none;
+}

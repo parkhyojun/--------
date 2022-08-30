@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/join.css">
+    <link rel="stylesheet" href="style/login.css">
+    <script src="https://kit.fontawesome.com/7b7a761eb5.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+<body>
+    <div class="wrap">
+        <div class="header">
+            <div class="navi">
+                <ul>
+                    <li>
+                        <a href="./dogs.html">무료분양</a>
+                    </li>
+                    <li>
+                        <a href="#">무료입소</a>
+                    </li>
+                    <li>
+                        <a href="#">입양혜택</a>
+                    </li>
+                    <li>
+                        <a href="#">가맹점 모집</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="logo">
+                <a href="./main.html">
+                    <img src="./img/logo.png" alt="logo">
+                </a>
+            </div>
+            <div class="member">
+                <ul>
+                    <li class="joinbtn">
+                        <a href="./join.html">회원가입</a>
+                    </li>
+                    <li class="loginbtn">
+                        <a href="./login.html">로그인</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="content"><!--컨텐츠 시작-->
+            <div class="join-wrap">
+                <ul class="tabs">
+                    <li>약관확인</li>
+                    <li>회원가입</li>
+                </ul>
+                <div class="contentdetail">
+                    <h3 class="title">이용약관 확인 및 동의</h3>
+                    <input type="checkbox" id="allAgreement">
+                    <label for="allAgreement" class="chklabel">이용약관 전체 체크</label>
+                    <div class="agreebox">
+                        <input type="checkbox" id="privacyAgreement" class="agreeCheck">
+                        <label for="privacyAgreement" class="chklabel">개인정보 수집 및 이용에 동의 <span class="fcBlue">(필수)</span></label>
+                        <div class="agreeContent">
+                            <ul>
+                                <li>수집항목 : 이름, 휴대전화번호, 생년월일, 비밀번호</li>
+                                <li>수집 및 이용목적 : 회원제 서비스 제공</li>
+                                <li>보유 및 이용기간 : 회원탈퇴 시 까지</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="agreebox">
+                        <input type="checkbox" id="adAgreement" class="agreeCheck">
+                        <label for="adAgreement" class="chklabel" >광고 수신 동의 <span class="fcBlue">(선택)</span></label>
+                        <div class="agreeContent">
+                            <ul>
+                                <li>수집항목 : 이름, 휴대전화번호, 생년월일, 비밀번호</li>
+                                <li>수집 및 이용목적 : 회원제 서비스 제공</li>
+                                <li>보유 및 이용기간 : 회원탈퇴 시 까지</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="btnBox">
+                        <button class="nextBtn">다음</button>
+                    </div>
+                </div><!--컨텐츠 디테일 끝-->
+                <div class="contentdetail">
+                    <div class="join-content">
+                        <div class="join-header">
+                            <h2>회원가입</h2>
+                        </div>
+                        <form action="joinMember.html" method="post" autocomplete="off">
+                            <div class="join-box">
+                                <span class="material-symbols-outlined">how_to_reg</span>
+                                <label for="id">아이디</label>
+                                <input type="text" name="id" id="id" placeholder="아이디" required >
+                                <span class="comment"></span>
+                            </div>
+                            <div class="join-box">
+                                <span class="material-symbols-outlined">lock_open</span>
+                                <label for="pw">비밀번호</label>
+                                <input type="password" name="pw" id="pw" placeholder="비밀번호" required >
+                                <span class="comment"></span>
+                            </div>
+                            <div class="join-box">
+                                <span class="material-symbols-outlined">lock</span>
+                                <label for="pwRe">비밀번호확인</label>
+                                <input type="password" name="pwRe" id="pwRe" placeholder="비밀번호 확인" required >
+                                <span class="comment"></span>
+                            </div>
+                            <div class="join-box">
+                                <span class="material-symbols-outlined">badge</span>
+                                <label for="name">이름</label>
+                                <input type="text" name="name" id="name" placeholder="이름" required>
+                                <span class="comment"></span>
+                            </div>
+                            <div class="join-box">
+                                <span class="material-symbols-outlined">phone_iphone</span>
+                                <label for="phone">전화번호</label>
+                                <input type="text" name="phone" id="phone" required placeholder="핸드폰 번호 ex) 01012341234">
+                                <span class="comment"></span>
+                            </div>
+                            <div class="join-box">
+                                <input type="submit" class="btn" value="Sign Up">
+                            </div>
+                        </form>
+                    </div>
+                </div><!--컨텐츠 디테일 끝-->
+            </div><!--join-wrap 끝-->
+            <div class="modal">
+                <div class="login-wrap">
+                    <div class="login-header">
+                        <h2>로그인</h2>
+                        <span class="material-symbols-outlined">close</span>
+                    </div>
+                    <div class="login-content">
+                        <form action="victoriapet_login.html" method="post" autocapitalize="off">
+                            <div class="input-box">
+                                <input type="text" name="id" placeholder="아이디" required>
+                            </div>
+                            <div class="input-box">
+                                <input type="password" name="pw" placeholder="비밀번호를 입력하세요" required>
+                            </div>
+                            <div class="input-box">
+                                <input type="submit" class="log-btn" value="로그인">
+                            </div>
+                        </form><!--폼태그 끝-->
+                        <div class="link-wrap">
+                            <ul>
+                                <li><a href="#">아이디 찾기</a>
+                                </li>
+                                <li><a href="#">비밀번호 찾기</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="login-footer">
+                            <div class="link-box">
+                                <div>아직 계정이 없으신가요? </div>
+                                <a href="./join.html">회원가입하기</a>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--login-wrap 끝-->
+            </div><!--modal 끝-->
+        </div><!--컨텐츠 끝-->
+        <div class="footer">
+            <div class="info">
+                <p>상호명 : (주)희옥다혜효준</p>
+                <p>소재지 : 서울시 영등포구 선유로 57 이레빌딩 19F / A</p>
+                <p">고객센터 : 1577-0001 [평일 09:00 ~ 18:00]</p>
+                <p>email : next007@iei.or.kr</p>
+            </div>
+        </div>
+    </div>
+    <script src="js/login.js"></script>
+    <script src="js/main_join.js"></script>
+</body>
+</html>

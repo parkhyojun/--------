@@ -1,0 +1,114 @@
+.modal{
+    background-color: rgba(0,0,0,0.5);
+    width: 100vW;
+    height: 100vh;
+    display: none;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1000;
+}
+.login-wrap{
+    padding: 80px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+.login-header{
+    padding-bottom: 30px;
+    margin: 0 auto;
+}
+.login-header>h2{
+    text-align: center;
+    font-size: 40px;
+}
+.login-header>span{
+    display: block;
+    float: right;
+    margin-right: 50px;
+    font-size: 40px;
+}
+.login-header>span:hover{
+    cursor: pointer;
+}
+.login-content{
+    margin: 0 auto;
+    padding: 30px;
+    text-align: center;
+}
+.input-box{
+    margin-bottom: 30px;
+}
+.input-box>input{
+    font-size: 30px;
+    border: none;
+    border: 2px solid #E5A2A8;
+    outline: none;
+}
+.input-box>input[type=submit]{
+    width: 400px;
+    margin-top: 10px;
+    border: 2px solid #E5A2A8;
+    border-radius: 5px;
+    background-color: #E5A2A8;
+    color: #fff;
+}
+.log-btn:hover{
+    cursor: pointer;
+}
+.link-wrap{
+    padding: 10px;
+}
+.link-wrap>ul{
+    width: 400px;
+    list-style: none;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+}
+.link-wrap li{
+    float: left;
+    text-align: center;
+    width: 198px;
+    flex-direction: row;
+    border-right: 2px solid #E5A2A8;
+}
+.link-wrap>ul a:hover{
+    color: #e5a2a8;
+
+}
+.link-wrap li:last-child{
+    border-right: none;
+}
+.link-wrap li>a{
+    text-decoration: none;
+    color: black;
+}
+.login-footer{
+    margin: 0 auto;
+    padding: 15px;
+}
+.link-box{
+    width: 400px;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #E5A2A8;
+    background-color: #e0e0e0;
+    overflow: hidden;
+}
+.link-box>div{
+    float: left;
+    text-align: center;
+}
+.link-box>a{
+    display: block;
+    float: right;
+    text-decoration: none;
+    color: #2c2d34;
+}
+.link-box>a:hover{
+    color: #E5A2A8;
+}

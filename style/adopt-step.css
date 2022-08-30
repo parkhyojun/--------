@@ -1,0 +1,124 @@
+.step-ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.step-li {
+    width: calc(1500px / 6);
+    height: 70px;
+    font-size: 18px;
+    line-height: 70px;
+    text-align: center;
+    border-bottom: 3px solid #f8f8f8;
+    box-sizing: border-box;
+    color: #ccc;
+    cursor: pointer;
+}
+
+.active-tab {
+    border-color: #E5A2A8;
+    color: #E5A2A8;
+}
+
+.step-content > .step-title {
+    margin: 30px 0;
+}
+
+.step-box {
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 400px;
+} 
+
+.step-box > img {
+    width: 500px;
+    float: right;
+    opacity: 0.4;
+}
+
+.step-box > .step-btn {
+    width: 150px;
+    height: 50px;
+    font-size: 18px;
+    border: none;
+    background-color: #E5A2A8;
+    border-radius: 25px;
+    align-self: center;
+    margin-left: 250px;
+    cursor: pointer;
+}
+
+.step-box > .step-btn > a {
+    text-decoration: none;
+    color: black;
+}
+
+.adopt-modal-wrap {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.adopt-modal {
+    background-color: #fff;
+    width: 50vw;
+    min-width: 300px;
+    height: 40vh;
+    min-height: 200px;
+}
+
+.adopt-modal-btn {
+    text-align: right;
+}
+
+.adopt-modal-btn > #adopt-close {
+    margin: 5px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.adopt-modal-top {
+    margin: 20px auto;
+    text-align: center;
+}
+
+.adopt-modal-content {
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.adopt-modal-content input {
+    width: 100%;
+    border: none;
+    font-size: 16px;
+    outline: none;
+    text-align: center;
+}
+
+.adopt-modal-content input[type=text] {
+    height: 30px;
+    border-bottom: 1px solid #ccc;
+}
+
+.adopt-modal-content #adopt-submit {
+    height: 50px;
+    border-radius: 25px;
+    margin-top: 20px;
+    background-color: #E5A2A8;
+    cursor: pointer;
+}
